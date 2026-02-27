@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="browser-container">
+        <!-- Browser Header/Toolbar -->
+        <div class="browser-header">
+            <div class="navigation-buttons">
+                <button id="backBtn" class="nav-btn" title="Back">
+                    ← Back
+                </button>
+                <button id="forwardBtn" class="nav-btn" title="Forward">
+                    Forward →
+                </button>
+                <button id="refreshBtn" class="nav-btn" title="Refresh">
+                    ⟳ Refresh
+                </button>
+            </div>
+
+            <!-- Address Bar -->
+            <div class="address-bar-container">
+                <input 
+                    type="text" 
+                    id="addressBar" 
+                    class="address-bar" 
+                    placeholder="Enter URL (e.g., https://example.com)"
+                    value="https://example.com"
+                >
+                <button id="goBtn" class="go-btn">Go</button>
+            </div>
+
+            <!-- Status -->
+            <div class="status-bar">
+                <span id="statusText">Ready</span>
+            </div>
+        </div>
+
+        <!-- Browser Content Area -->
+        <div class="browser-content">
+            <iframe 
+                id="contentFrame" 
+                class="content-frame"
+                title="Browser content"
+            ></iframe>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
